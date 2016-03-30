@@ -55,7 +55,7 @@
 
         - name: copy secrets from secret server to destination
           delegate_to: localhost
-          sudo: false
+          become: false
           shell: |
             ssh nest.bocoup.com "cat /mnt/secrets/{ses,meetup}" |
             ssh {{inventory_hostname}} "cat > ~{{ lookup('env', 'USER') }}/.env"
