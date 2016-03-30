@@ -145,7 +145,7 @@ remote: BostonDataVis
 commit: master
 
 # Git repo address.
-git_repo: https://github.com/{{remote}}/BostonDataVis.com
+git_repo: https://github.com/{{remote}}/Website
 
 # Clone and build the specified commit SHA, regardless of prior build status.
 force: false
